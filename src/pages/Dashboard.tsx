@@ -2,7 +2,7 @@ import Header from "@/components/layout/Header";
 import StatusCard from "@/components/dashboard/StatusCard";
 import AlertPanel from "@/components/dashboard/AlertPanel";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Activity, Mountain, Thermometer, Gauge, TrendingUp, Zap } from "lucide-react";
+import { Activity, Mountain, Thermometer, Gauge, TrendingUp, Zap, Wind } from "lucide-react";
 
 const Dashboard = () => {
   return (
@@ -64,6 +64,14 @@ const Dashboard = () => {
             icon={Zap}
             status="safe"
             trend="99.8% uptime"
+          />
+          <StatusCard
+            title="O2 Levels"
+            value="19.2%"
+            description="Oxygen concentration in mine"
+            icon={Wind}
+            status="warning"
+            trend="↓ 0.8% below normal"
           />
         </div>
 
