@@ -20,8 +20,8 @@ const Header = () => {
           <Button variant="ghost" className="text-sm font-medium" asChild>
             <a href="/dashboard">Dashboard</a>
           </Button>
-          <Button variant="ghost" className="text-sm font-medium">
-            Monitoring
+          <Button variant="ghost" className="text-sm font-medium" asChild>
+            <a href="/monitoring">Monitoring</a>
           </Button>
           <Button variant="ghost" className="text-sm font-medium">
             Alerts
